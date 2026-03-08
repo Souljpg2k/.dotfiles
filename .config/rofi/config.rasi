@@ -1,0 +1,70 @@
+configuration {
+    display-drun: "App :";
+    font:         "JetBrainsMono Nerd Font Medium 12";
+}
+
+@theme "/dev/null"
+
+* {
+    spacing:          0px;
+    
+    bg:               #000000e5;
+    selected:         #ff82f5;
+    text-selected:    #5f5151;
+    text-element:     #ffffff;
+    error-message:    #ff607a;
+    background-color: transparent;
+}
+
+window {
+    background-color: @bg;
+    width:            500px;
+    height:           300px;
+    padding:          10px;
+}
+
+inputbar {
+    padding:          0px 0px 10px 0px;
+}
+
+prompt {
+    text-color:       white;
+    padding:          0px 10px 0px 0px;
+}
+
+entry {
+    text-color:        #ffffffe5;
+    placeholder:       "Search";
+    placeholder-color: #ffffff42;
+}
+
+listview {
+    border:           0px 0px 0px;
+    scrollbar:        false;
+    spacing:          5px;
+}
+
+element {
+    padding:          5px;
+    cursor:           pointer;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+    text-color:       @text-element;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color:       @text-selected;
+}
+
+textbox {
+    text-color:       @error-message;
+}
