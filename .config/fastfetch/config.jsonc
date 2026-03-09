@@ -9,24 +9,57 @@
     }
   },
   "display": {
-    "separator": " "
+    "separator": "   "
   },
   "modules": [
-    "break",
     "break",
     {
       "type": "custom",
       "key": "Fuyu"
     },
-    "os",
-    "kernel",
-    "uptime",
-    "packages",
-    "shell",
-    "wm",
-    "terminal",
-    "swap",
-    "disk",
-    "break"
+    {
+      "type": "custom",
+      "key": "╭────────────────────────────────────────╮"
+    },
+    {
+      "type": "os",
+      "key": "\uf17c"
+    },
+    {
+      "type": "kernel",
+      "key": "\uf013"
+    },
+    {
+      "type": "uptime",
+      "key": "\ue641"
+    },
+    {
+      "type": "packages",
+      "key": "\ueb29"
+    },
+    {
+      "type": "shell",
+      "key": "\uebca"
+    },
+    {
+      "type": "wm",
+      "key": "\uf108"
+    },
+    {
+      "type": "terminal",
+      "key": "\uea85"
+    },
+    {
+      "type": "swap",
+      "key": "\uefc5"
+    },
+    {
+      "type": "disk",
+      "key": "\uf0a0"
+    },
+    {
+      "type": "custom",
+      "key": "╰────────────────────────────────────────╯"
+    }
   ]
 }
