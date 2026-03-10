@@ -36,6 +36,10 @@
       "key": "\ueb29"
     },
     {
+      "type": "shell",
+      "key": "\uebca"
+    },
+    {
       "type": "custom",
       "key": "╰──────────────────────────────────────╯"
     },
@@ -44,19 +48,19 @@
       "key": "╭──────────────────────────────────────╮"
     },
     {
-      "type": "shell",
-      "key": "\uebca"
-    },
-    {
       "type": "wm",
       "key": "\uf108"
     },
     {
       "type": "terminal",
-      "key": "\uea85"
+      "key": "\uf489"
     },
     {
       "type": "swap",
+      "key": "󰣂"
+    },
+    {
+      "type": "memory",
       "key": "\uefc5"
     },
     {
