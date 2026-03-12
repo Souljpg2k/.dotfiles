@@ -8,9 +8,9 @@ configuration {
 * {
     spacing:          0px;
     
-    bg:               #000000e5;
-    selected:         #ff82f5;
-    text-selected:    #5f5151;
+    bg:               #24292E;
+    selected:         #8284ff;
+    text-selected:    #3a3a46;
     text-element:     #ffffff;
     error-message:    #ff607a;
     background-color: transparent;
@@ -22,7 +22,6 @@ window {
     height:           300px;
     padding:          10px;
 }
-
 inputbar {
     padding:          0px 0px 10px 0px;
 }
