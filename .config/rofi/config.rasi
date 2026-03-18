@@ -19,6 +19,8 @@ configuration {
 window {
     background-color: @bg;
     border-radius:    16px;
+    border:           1px;
+    border-color:     #ffffffaa;
     width:            500px;
     height:           300px;
     padding:          10px;
