@@ -1,0 +1,65 @@
+{
+    "layer": "top",
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "margin-left": 8,
+    "margin-right": 8,
+    
+    "modules-left": [
+        "custom/rofi",
+        "hyprland/window"
+    ],
+    
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    
+    "modules-right": [
+        "custom/hyprshot",
+        "custom/waypaper",
+        "pulseaudio",
+        "network",
+        "clock"
+    ],
+
+    "custom/rofi": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-click": "rofi -show drun"
+    },
+    
+    "hyprland/window": {
+    	"format": "{}",
+    	"tooltip": false
+    },
+    
+    "custom/hyprshot": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-click": "hyprshot -m region"
+    },
+
+    "custom/waypaper": {
+    	"format": "",
+    	"tooltip": false,
+    	"on-click": "waypaper"
+    },
+    
+     "pulseaudio": {
+        "format": " 󰋋  {volume}%",
+        "format-muted": "󰟎",
+        "on-click": "pavucontrol"
+    },
+    
+    "network": {
+        "format-wifi": "󰤥",
+        "format-disconnected": "󰤭",
+        "tooltip-format": "{essid}",
+        "on-click": "iwgtk"
+    },
+
+    "clock": {
+    	"format": "{:%H:%M}",
+    	"tooltip-format": "{:%A, %B %d, %Y}"
+    }
+}
