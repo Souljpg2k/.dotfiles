@@ -1,9 +1,9 @@
 {
     "layer": "top",
-    "margin-top": 8,
+    "margin-top": 5,
     "margin-bottom": 0,
-    "margin-left": 8,
-    "margin-right": 8,
+    "margin-left": 5,
+    "margin-right": 5,
     
     "modules-left": [
         "custom/rofi",
@@ -39,6 +39,19 @@
     	"on-click": "hyprshot -m region"
     },
 
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "default": "󰥲",
+        "active": "",
+        "persistent": "󰥲"
+      },
+      "persistent-workspaces": {
+          "*": 3
+        }
+
+    },
+
     "custom/waypaper": {
     	"format": "",
     	"tooltip": false,
@@ -55,7 +68,7 @@
         "format-wifi": "󰤥",
         "format-disconnected": "󰤭",
         "tooltip-format": "{essid}",
-        "on-click": "iwgtk"
+        "on-click": "nmtui"
     },
 
     "clock": {

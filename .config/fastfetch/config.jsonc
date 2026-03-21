@@ -14,7 +14,8 @@
     "break",
     {
       "type": "custom",
-      "key": "Arisu"
+      "key": "Arisu",
+      "keyColor": "#F5BDE6"
     },
     {
       "type": "custom",
