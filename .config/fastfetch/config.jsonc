@@ -4,22 +4,17 @@
     "source": "~/pic/Arisu.png",
     "width": 20,
     "padding": {
-      "top": 4
+      "top": 3
     }
   },
   "display": {
-    "separator": "   "
+    "separator": "  "
   },
   "modules": [
     "break",
     {
       "type": "custom",
-      "key": "Arisu",
-      "keyColor": "#F5BDE6"
-    },
-    {
-      "type": "custom",
-      "key": "╭──────────────────────────────────────╮"
+      "key": "Arisu"
     },
     {
       "type": "os",
@@ -42,14 +37,6 @@
       "key": "\uebca"
     },
     {
-      "type": "custom",
-      "key": "╰──────────────────────────────────────╯"
-    },
-    {
-      "type": "custom",
-      "key": "╭──────────────────────────────────────╮"
-    },
-    {
       "type": "wm",
       "key": "\uf108"
     },
@@ -69,9 +56,10 @@
       "type": "disk",
       "key": "\uf0a0"
     },
+    "break",
     {
-      "type": "custom",
-      "key": "╰──────────────────────────────────────╯"
+      "type": "colors",
+      "symbol": "circle"
     }
   ]
 }

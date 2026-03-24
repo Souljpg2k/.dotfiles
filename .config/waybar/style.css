@@ -37,14 +37,14 @@
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @color1;
+    color: @color4;
     background-color: rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
     color: @wsb;
-    background: @color3;
+    background: @color2;
     border-radius: 15px;
     min-width: 30px;
     transition: all 0.3s ease-in-out;
