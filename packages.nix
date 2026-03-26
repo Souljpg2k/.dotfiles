@@ -16,7 +16,6 @@
      swww
      brave
      cava
-     waybar
      waypaper
      hyprshot
      hyprpicker
