@@ -1,5 +1,5 @@
 configuration {
-    display-drun: "App :";
+    display-drun: ">< :";
     font:         "JetBrainsMono Nerd Font Medium 12";
 }
 
@@ -8,23 +8,29 @@ configuration {
 * {
     spacing:          0px;
     
-    bg:               #24292Eaa;
+    bg:               #0e0e0e;
     selected:         #e4e4e4;
-    text-selected:    #3a3a46;
-    text-element:     #ffffff;
+    gradient-color:   linear-gradient(to left, #8e54e9ee, #4776e6ee);
+    text-selected:    #ffffff;
+    text-element:     #3a3a46;
     error-message:    #ff607a;
     background-color: transparent;
 }
 
 window {
-    background-color: @bg;
+    background-image: @gradient-color;
     border-radius:    16px;
-    border:           1px;
-    border-color:     #ffffffaa;
     width:            500px;
     height:           300px;
-    padding:          10px;
+    padding:          2px;
 }
+
+mainbox {
+	background-color: @bg;
+	border-radius:    16px;
+	padding:          15px;
+}
+
 inputbar {
     padding:          0px 0px 10px 0px;
 }
@@ -47,7 +53,7 @@ listview {
 }
 
 element {
-    border-radius:    16px;
+    border-radius:    15px;
     padding:          5px;
     cursor:           pointer;
     background-color: transparent;
@@ -64,7 +70,7 @@ element normal.normal, element alternate.normal {
 }
 
 element selected.normal {
-    background-color: @selected;
+    background-image: @gradient-color;
     text-color:       @text-selected;
 }
 
