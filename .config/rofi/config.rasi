@@ -8,7 +8,7 @@ configuration {
 * {
     spacing:          0px;
     
-    bg:               #0e0e0e;
+    bg:               #0e0f13;
     selected:         #e4e4e4;
     gradient-color:   linear-gradient(to left, #8e54e9ee, #4776e6ee);
     text-selected:    #ffffff;
