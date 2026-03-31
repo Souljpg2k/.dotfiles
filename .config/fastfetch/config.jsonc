@@ -1,19 +1,14 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-  	"source": "arch_small",
-  	"padding": {
-  		"top": 2
-  	}
+  	"source": "$HOME/Pictures/Amiya1.png",
+    "width": 25
   },
   "display": {
     "separator": "  "
   },
   "modules": [
-     {
-       "type": "custom",
-       "key":  "arx"
-     },
+    "break",
      {
        "type": "os",
        "key": "\ue732"
