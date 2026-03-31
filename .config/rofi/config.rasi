@@ -1,0 +1,78 @@
+configuration {
+    display-drun: "󰣇 :";
+    display-run:  "󰣇 :";
+    font:         "JetBrainsMono Nerd Font Medium 12";
+}
+
+@theme "/dev/null"
+
+* {
+    spacing:          0px;
+    bg:               #0D0D0D;
+    selected:         #769ff0;
+    text-selected:    #ffffff;
+    text-element:     #3a3a46;
+    error-message:    #ff607a;
+    background-color: transparent;
+}
+
+window {
+    background-color: @bg;
+    border-radius:    16px;
+    width:            500px;
+    height:           300px;
+    padding:          2px;
+}
+
+mainbox {
+	background-color: transparent;
+	border-radius:    16px;
+	padding:          15px;
+}
+
+inputbar {
+    padding:          0px 0px 10px 0px;
+}
+
+prompt {
+    text-color:       white;
+    padding:          0px 10px 0px 0px;
+}
+
+entry {
+    text-color:        #ffffffe5;
+    placeholder:       "Search";
+    placeholder-color: #ffffff42;
+}
+
+listview {
+    border:           0px 0px 0px;
+    scrollbar:        false;
+    spacing:          5px;
+}
+
+element {
+    border-radius:    15px;
+    padding:          5px;
+    cursor:           pointer;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element normal.normal, element alternate.normal {
+    background-color: transparent;
+    text-color:       @text-element;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color:       @text-selected;
+}
+
+textbox {
+    text-color:       @error-message;
+}
