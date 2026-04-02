@@ -1,24 +1,19 @@
+@import "colors.rasi"
+
 configuration {
-    display-drun: "󰣇 :";
-    display-run:  "󰣇 :";
+    display-drun: "󰣇";
+    display-run:  "󰣇";
     font:         "JetBrainsMono Nerd Font Medium 12";
 }
 
-@theme "/dev/null"
-
 * {
     spacing:          0px;
-    bg:               #0D0D0D;
-    selected:         #769ff0;
-    text-selected:    #ffffff;
-    text-element:     #3a3a46;
-    error-message:    #ff607a;
-    background-color: transparent;
 }
 
 window {
-    background-color: @bg;
+    background-color: @background;
     border-radius:    16px;
+    border:           0px;
     width:            500px;
     height:           300px;
     padding:          2px;
@@ -32,17 +27,18 @@ mainbox {
 
 inputbar {
     padding:          0px 0px 10px 0px;
+    text-color:       @primary;
 }
 
 prompt {
-    text-color:       white;
+    text-color:       @primary;
     padding:          0px 10px 0px 0px;
 }
 
 entry {
-    text-color:        #ffffffe5;
+    text-color:        @primary;
     placeholder:       "Search";
-    placeholder-color: #ffffff42;
+    placeholder-color: @placeholder;
 }
 
 listview {
@@ -60,7 +56,6 @@ element {
 
 element-text {
     background-color: transparent;
-    text-color:       inherit;
 }
 
 element normal.normal, element alternate.normal {
