@@ -1,3 +1,4 @@
+import "../Colors"
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
@@ -13,7 +14,6 @@ PanelWindow {
     property int wsmodel: 10
     property string mid: "#131313"
     property string ws: "#1E1E1E"
-    property string wsActive: "#769FF0"
     property string wsbackground: "#0E0E0E"
     property string wsText: "#878787"
     property string wsTextActive: "#FFFFFF"
@@ -90,7 +90,7 @@ PanelWindow {
                             radius: 50
                             width: isActive ? 50 : 24
                             height: 24
-                            color: isActive ? wsActive : (mouseArea.containsMouse ? "#2a2a2a" : ws)
+                            color: isActive ? Colors.source_color : (mouseArea.containsMouse ? "#2a2a2a" : ws)
 
                             Text {
                                 anchors.centerIn: parent

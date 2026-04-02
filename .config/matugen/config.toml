@@ -1,12 +1,14 @@
 [config]
 
 [templates.kitty]
-
 input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/themes/matugen.conf'
 post_hook = "kitty +kitten themes --reload-in=all matugen"
 
-
 [templates.rofi]
 input_path = '~/.config/matugen/templates/rofi-colors.rasi'
 output_path = '~/.config/rofi/colors.rasi'
+
+[templates.quickshell]
+input_path = '~/.config/matugen/templates/quickshell.qml'
+output_path = '~/.config/quickshell/Colors/Colors.qml'
