@@ -24,3 +24,8 @@ button:hover {
     outline-style: none;
     background-size: 23%;
 }
+
+button:hover {
+    border-radius: 40px;
+    background-size: 20%;
+}
