@@ -14,9 +14,8 @@ PanelWindow {
     property int wsmodel: 10
     property string mid: "#131313"
     property string ws: "#1E1E1E"
-    property string wsbackground: "#0E0E0E"
     property string wsText: "#878787"
-    property string wsTextActive: "#FFFFFF"
+    property string wsbackground: "#0E0E0E"
     property string iconApp: "󰣇"
     property int iconSize: 18
 
@@ -95,7 +94,7 @@ PanelWindow {
                             Text {
                                 anchors.centerIn: parent
                                 text: index + 1
-                                color: isActive ? wsTextActive : wsText
+                                color: isActive ? Colors.surface_container_low : wsText
                                 font.pixelSize: 13
                                 font.bold: isActive
                             }
