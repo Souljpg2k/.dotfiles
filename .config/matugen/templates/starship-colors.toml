@@ -1,0 +1,66 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[░▒▓]({{colors.secondary.default.hex}})\
+[ 󰣇 ](bg:{{colors.secondary.default.hex}} fg:{{colors.on_secondary.default.hex}})\
+[](bg:{{colors.source_color.default.hex}} fg:{{colors.secondary.default.hex}})\
+$directory\
+[](fg:{{colors.source_color.default.hex}} bg:{{colors.secondary_container.default.hex}})\
+$git_branch\
+$git_status\
+[](fg:{{colors.secondary_container.default.hex}} bg:{{colors.surface.default.hex}})\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:{{colors.surface.default.hex}} bg:{{colors.surface_variant.default.hex}})\
+$time\
+[ ](fg:{{colors.surface_variant.default.hex}})\
+\n$character"""
+
+[directory]
+style = "fg:{{colors.on_primary.default.hex}} bg:{{colors.source_color.default.hex}}"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:{{colors.secondary_container.default.hex}}"
+format = '[[ $symbol $branch ](fg:{{colors.on_secondary_container.default.hex}} bg:{{colors.secondary_container.default.hex}})]($style)'
+
+[git_status]
+style = "bg:{{colors.secondary_container.default.hex}}"
+format = '[[($all_status$ahead_behind )](fg:{{colors.on_secondary_container.default.hex}} bg:{{colors.secondary_container.default.hex}})]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:{{colors.surface.default.hex}}"
+format = '[[ $symbol ($version) ](fg:{{colors.tertiary.default.hex}} bg:{{colors.surface.default.hex}})]($style)'
+
+[rust]
+symbol = ""
+style = "bg:{{colors.surface.default.hex}}"
+format = '[[ $symbol ($version) ](fg:{{colors.error.default.hex}} bg:{{colors.surface.default.hex}})]($style)'
+
+[golang]
+symbol = ""
+style = "bg:{{colors.surface.default.hex}}"
+format = '[[ $symbol ($version) ](fg:{{colors.primary.default.hex}} bg:{{colors.surface.default.hex}})]($style)'
+
+[php]
+symbol = ""
+style = "bg:{{colors.surface.default.hex}}"
+format = '[[ $symbol ($version) ](fg:{{colors.secondary.default.hex}} bg:{{colors.surface.default.hex}})]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:{{colors.surface_variant.default.hex}}"
+format = '[[  $time ](fg:{{colors.on_surface.default.hex}} bg:{{colors.surface_variant.default.hex}})]($style)'
