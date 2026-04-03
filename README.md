@@ -7,3 +7,9 @@ sudo pacman -S firefox rofi fastfetch mako code cava neovim kitty starship zsh m
 ```bash
 yay -S matugen-bin bibata-cursor-theme-bin waypaper-git quickshell-git wlogout
 ```
+
+- [Hyprland Wiki](https://wiki.hypr.land/)
+
+- [starship Preset](https://starship.rs/presets/tokyo-night)
+
+- [LazyVim](https://www.lazyvim.org/installation)  |  [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
