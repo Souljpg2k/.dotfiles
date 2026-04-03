@@ -9,13 +9,13 @@ import Quickshell.Wayland
 PanelWindow {
     id: root
 
-    property string background: "#0D0D0D"
-    property string foreground: "#DDDDDD"
+    property color background: "#0D0D0D"
+    property color foreground: "#DDDDDD"
     property int wsmodel: 10
-    property string mid: "#131313"
-    property string ws: "#1E1E1E"
-    property string wsText: "#878787"
-    property string wsbackground: "#0E0E0E"
+    property color mid: "#131313"
+    property color ws: "#1E1E1E"
+    property color wsText: "#878787"
+    property color wsbackground: "#0E0E0E"
     property string iconApp: "󰣇"
     property int iconSize: 18
 
