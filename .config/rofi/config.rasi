@@ -3,6 +3,7 @@
 configuration {
     display-drun: "󰣇";
     display-run:  "󰣇";
+    show-icons: true;
     font:         "JetBrainsMono Nerd Font Medium 12";
 }
 
@@ -42,7 +43,7 @@ entry {
 }
 
 listview {
-    border:           0px 0px 0px;
+    border:           0px;
     scrollbar:        false;
     spacing:          5px;
 }
