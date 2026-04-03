@@ -10,6 +10,8 @@ yay -S matugen-bin bibata-cursor-theme-bin waypaper-git quickshell-git wlogout
 
 - [Hyprland Wiki](https://wiki.hypr.land/)
 
+- [Quickshell Docs](https://quickshell.org/docs/v0.2.1/)
+
 - [starship Preset](https://starship.rs/presets/tokyo-night)
 
 - [LazyVim](https://www.lazyvim.org/installation)  |  [tokyonight.nvim](https://github.com/folke/tokyonight.nvim)
