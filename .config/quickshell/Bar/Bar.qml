@@ -28,6 +28,7 @@ PanelWindow {
         right: true
     }
 
+    //midBar
     Rectangle {
         id: midBar
 
@@ -44,8 +45,10 @@ PanelWindow {
             spacing: 6
 
             Rectangle {
-                Layout.preferredWidth: 40
-                Layout.preferredHeight: 24
+                id: app
+
+                width: 30
+                height: 24
                 color: "transparent"
 
                 Text {
@@ -70,7 +73,10 @@ PanelWindow {
 
             }
 
+            //workspace
             Rectangle {
+                id: workspace
+
                 color: wsbackground
                 radius: 20
                 Layout.preferredWidth: wsmodel * 24 + (wsmodel - 1) * 6 + 26 + 12
@@ -107,16 +113,9 @@ PanelWindow {
                                 onClicked: Hyprland.dispatch("workspace " + (index + 1))
                             }
 
-                            Behavior on color {
-                                ColorAnimation {
-                                    duration: 120
-                                }
-
-                            }
-
                             Behavior on width {
                                 NumberAnimation {
-                                    duration: 180
+                                    duration: 220
                                 }
 
                             }
@@ -129,18 +128,29 @@ PanelWindow {
 
             }
 
-            SystemClock {
-                id: clock
+            //clock
+            Rectangle {
+                width: 120
+                height: 30
+                color: "transparent"
 
-                precision: SystemClock.Seconds
-            }
+                Row {
+                    anchors.centerIn: parent
 
-            Text {
-                text: Qt.formatDateTime(clock.date, "ddd d MMM   hh:mm:ss")
-                color: foreground
-                font.bold: true
-                Layout.leftMargin: 4
-                Layout.rightMargin: 4
+                    SystemClock {
+                        id: clock
+
+                        precision: SystemClock.Seconds
+                    }
+
+                    Text {
+                        text: Qt.formatDateTime(clock.date, "ddd d MMM   hh:mm:ss")
+                        color: foreground
+                        font.bold: true
+                    }
+
+                }
+
             }
 
         }
