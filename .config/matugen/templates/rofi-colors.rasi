@@ -1,8 +1,8 @@
 * {
- selected:            {{colors.primary.default.hex}};
+ selected:            {{ colors.source_color.default.hex }};
  primary:             {{colors.on_surface.default.hex}};
  text-selected:       {{colors.surface.dark.hex}};
- text-element:        {{colors.tertiary.default.hex}};
+ text-element:        {{ colors.on_surface.default.hex }};
  background:          #0D0D0D;
  error-message:       #ff607a;
  placeholder:         #414141;
