@@ -3,8 +3,7 @@
 configuration {
     display-drun: "󰣇";
     display-run:  "󰣇";
-    show-icons: true;
-    font:         "JetBrainsMono Nerd Font Medium 12";
+    font:         "M+2 Nerd Font Medium 11";
 }
 
 * {

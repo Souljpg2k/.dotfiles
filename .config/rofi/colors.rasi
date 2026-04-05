@@ -1,8 +1,8 @@
 * {
- selected:            #99ccfa;
- primary:             #e0e2e8;
- text-selected:       #101418;
- text-element:        #d1bfe7;
+ selected:            #649be9;
+ primary:             #e1e2e9;
+ text-selected:       #111318;
+ text-element:        #e1e2e9;
  background:          #0D0D0D;
  error-message:       #ff607a;
  placeholder:         #414141;
